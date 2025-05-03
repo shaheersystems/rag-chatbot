@@ -7,6 +7,10 @@ import { useState } from "react";
 export default function Home() {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
+  /**
+   * Generates synonyms for the word "happy" using the Ollama AI model and displays
+   * the result in the page.
+   */
   const handle = async () => {
     setLoading(true);
     setText("");
